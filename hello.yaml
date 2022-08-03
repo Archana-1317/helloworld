@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: gcr.io/ferrous-syntax-348017/helloworld:latest
+        image: gcr.io/sylvan-bonbon-357404/helloworld-latest
         ports:
         - containerPort: 80
         - containerPort: 443
