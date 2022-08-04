@@ -63,7 +63,7 @@ stages {
       stage ('Deploy to kubernetes'){
         steps{
           script {
-            sh "kubectl config use-context gke_sylvan-bonbon-357404_us-central1-c_batch-14"
+            sh "kubectl config use-context gke_sylvan-bonbon-357404_us-central1-c_batch-15"
             sh "cd ${WORKSPACE}"
             sh "kubectl create -f '${WORKSPACE}'/k8s/deployment.yaml"
             sh "kubectl create -f '${WORKSPACE}'/k8s/service.yaml"
