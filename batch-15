@@ -65,8 +65,8 @@ stages {
           script {
             sh "kubectl config use-context gke_sylvan-bonbon-357404_us-central1-c_batch-15"
             sh "cd ${WORKSPACE}"
-            sh "kubectl apply -f '${WORKSPACE}'/kube/deployment.yml"
-            sh "kubectl apply -f '${WORKSPACE}'/kube/service.yml"
+            sh "kubectl apply -f '${WORKSPACE}'/kube/deployment.yaml"
+            sh "kubectl apply -f '${WORKSPACE}'/kube/service.yaml"
           }
          }
         }
